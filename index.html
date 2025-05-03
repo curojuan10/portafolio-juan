@@ -1,40 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="estilo.css" />
-  </head>
-  <body>
-    <!--MENU ENCABEZADO-->
-    <div class="contenedor-header">
-      <header>
-        <div class="logo">
-          <a href="#">JUAN</a>
-        </div>
-        <div class="nav">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Portafolio</title>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+
+<body>
+  <!--MENU ENCABEZADO-->
+  <div class="contenedor-header">
+    <header>
+      <div class="logo">
+        <a href="#">JUAN</a>
+      </div>
+      <nav id="nav">
+        <ul>
+          <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+          <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+          <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+          <li>
+            <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+          </li>
+          <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+          <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+        </ul>
+      </nav>
+      <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+  </div>
+
+  <!--SECCION DE INICIO  -->
+  <section id="inicio" class="inicio">
+    <div class="contenido-banner">
+      <div class="contenedor-img">
+        <img src="img/hero.jpg" alt="" />
+      </div>
+      <h1>JUAN CARLOS</h1>
+      <h2>Ingeniero de Sistemas e Iformacion</h2>
+      <div class="redes">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <!-- <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-skype"></i></a>
+        <a href="#"><i class="fa-solid fa-rss"></i></a>
+        <!-- <a href="#"><i class="fa-brands fa-whatsapp"></i></i></a> -->
+      </div>
+    </div>
+  </section>
+  <!-- SECCIONE SOBRE MI  -->
+  <section id="sobremi" class="sobremi">
+    <div class="contenido-seccion">
+      <h2>Sobre Mi</h2>
+      <p>
+        <span>Hola, soy Juan Carlos</span>. estudiante de Ingeniería de
+        Sistemas en 7mo ciclo. Apasionado por la tecnología, me enfoco en
+        desarrollo de software, bases de datos, inteligencia artificial y
+        ciberseguridad. He desarrollado habilidades en programación, gestión
+        de proyectos y trabajo en equipo, participando en proyectos prácticos
+        para resolver problemas reales.
+      </p>
+
+      <div class="fila">
+        <!-- datos personales -->
+        <div class="col">
+          <h3>Datos Personales</h3>
           <ul>
-            <li><a href="#inicio">INICIO</a></li>
-            <li><a href="#sobremi">SOBRE MI</a></li>
-            <li><a href="#skills">SKILLS</a></li>
-            <li><a href="#curriculum">CURRICULUM</a></li>
-            <li><a href="#portafolio">PORTAFOLIO</a></li>
-            <li><a href="#contacto">CONTACTO</a></li>
+            <li>
+              <strong>Cumpleaños</strong>
+              04-03-2002
+            </li>
+            <li>
+              <strong>Telefono</strong>
+              984-679-227
+            </li>
+            <li>
+              <strong>Email</strong>
+              juan@Email.com
+            </li>
+            <li>
+              <strong>Website</strong>
+              www.juan.com
+            </li>
+            <li>
+              <strong>Dirección</strong>
+              jr Grau 105, Ayacucho-Perú
+            </li>
+            <li>
+              <strong>Cargo</strong>
+              <span>ESTUDIANTE</span>
+            </li>
           </ul>
         </div>
-        <div class="nav-responsive">
-          <i class="fa-solid fa-bars"></i>
+
+        <!-- Intereses -->
+        <div class="col">
+          <h3>Intereses</h3>
+          <div class="contenedor-intereses">
+            <div class="intereses">
+              <i class="fa-brands fa-steam"></i>
+              <span>JUEGOS</span>
+            </div>
+            <div class="intereses">
+              <i class="fa-solid fa-headphones"></i>
+              <span>MÚSICA</span>
+            </div>
+            <div class="intereses">
+              <i class="fa-solid fa-plane"></i>
+              <span>VIAJES</span>
+            </div>
+            <div class="intereses">
+              <i class="fa-brands fa-apple"></i>
+              <span>MAC OS</span>
+            </div>
+            <div class="intereses">
+              <i class="fa-solid fa-futbol"></i>
+              <span>DEPORTE</span>
+            </div>
+            <div class="intereses">
+              <i class="fa-solid fa-book"></i>
+              <span>LIBROS</span>
+            </div>
+            <div class="intereses">
+              <i class="fa-solid fa-car"></i>
+              <span>AUTOS</span>
+            </div>
+            <div class="intereses">
+              <i class="fa-solid fa-camera"></i>
+              <span>FOTOS</span>
+            </div>
+          </div>
         </div>
-      </header>
+      </div>
+      <button>
+        Descargar CV <i class="fa-solid fa-download"></i>
+        <span class="overlay"></span>
+      </button>
     </div>
-  </body>
+  </section>
+  <!-- SECCION SKILLS -->
+  <section class="skills" id="skills">
+    <div class="contenedor-seccion">
+      <h2>Skills</h2>
+      <div class="fila">
+        <!-- Technical Skills -->
+        <div class="col">
+          <h3>Technical Skills</h3>
+          <div class="skill">
+            <span>JavaScript</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>30%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>HTML & CSS</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>75%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Photoshop</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>30%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Java</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>75%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Base de Datos</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>60%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
 </html>
